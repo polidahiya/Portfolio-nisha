@@ -1,5 +1,7 @@
 import React from "react";
-import { FaBook, FaPenFancy, FaChessKnight, FaLeaf } from "react-icons/fa";
+import { FaChessKnight, FaLeaf } from "react-icons/fa";
+import { MdOutlineTravelExplore } from "react-icons/md";
+import { IoIosMusicalNotes } from "react-icons/io";
 
 function Hobbies() {
   return (
@@ -16,24 +18,20 @@ function Hobbies() {
         </div>
 
         {/* Right Section: Image */}
-        <div className="md:w-1/2">
+        <div className="w-full md:w-1/2">
           <h2 className="text-4xl font-extrabold text-theme font-tenor mb-8 text-center md:text-left">
             Hobbies
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6  w-full">
             {/* Hobby Item */}
             <div className="flex items-center space-x-4 bg-white p-4 rounded-xl shadow-md">
-              <FaBook className="text-theme text-3xl" />
-              <p className="text-lg font-medium text-gray-700">
-                Reading educational books
-              </p>
+              <IoIosMusicalNotes className="text-theme text-3xl" />
+              <p className="text-lg font-medium text-gray-700">Music</p>
             </div>
 
             <div className="flex items-center space-x-4 bg-white p-4 rounded-xl shadow-md">
-              <FaPenFancy className="text-theme text-3xl" />
-              <p className="text-lg font-medium text-gray-700">
-                Writing blogs on teaching methodologies
-              </p>
+              <MdOutlineTravelExplore className="text-theme text-3xl" />
+              <p className="text-lg font-medium text-gray-700">traveling</p>
             </div>
 
             <div className="flex items-center space-x-4 bg-white p-4 rounded-xl shadow-md">

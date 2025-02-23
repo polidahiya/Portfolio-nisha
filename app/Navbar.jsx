@@ -1,6 +1,14 @@
 "use client";
 import React, { useState } from "react";
-import { FaBars, FaTimes, FaHome, FaUser, FaGraduationCap, FaPalette, FaEnvelope } from "react-icons/fa";
+import {
+  FaBars,
+  FaTimes,
+  FaHome,
+  FaUser,
+  FaGraduationCap,
+  FaPalette,
+  FaEnvelope,
+} from "react-icons/fa";
 
 const navItems = [
   { name: "Home", icon: <FaHome /> },
@@ -42,14 +50,15 @@ function Navbar() {
         {/* Desktop Navigation Links */}
         <ul className="hidden lg:flex space-x-6">
           {navItems.map((item, index) => (
-            <li key={index} className="flex items-center gap-2">
+            <li key={index} className="relative group/underline flex items-center gap-2">
               {item.icon}
               <a
                 href={`#${item.name.toLowerCase().replace(/\s+/g, "")}`}
-                className="hover:text-gray-300 transition-colors duration-300"
+                className=""
               >
                 {item.name}
               </a>
+              <span className="absolute bottom-0 right-0 h-[2px] w-0 bg-white rounded-full lg:group-hover/underline:left-0 lg:group-hover/underline:w-full duration-300"></span>
             </li>
           ))}
         </ul>
