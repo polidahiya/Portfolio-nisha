@@ -5,11 +5,15 @@ export default {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        theme: "#d68e43",
+        bg1: "#f7f7fa",
+      },
+      fontFamily: {
+        tenor: ['"Tenor Sans"', "sans-serif"],
       },
     },
   },
